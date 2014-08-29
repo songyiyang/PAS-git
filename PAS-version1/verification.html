@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!-- 
+	Nicole Carvalho
+  Verification
+-->
+
+<html lang = "en">  
+  <head>
+  	<meta charset = "utf-8"/> 
+  	<title>Verification</title>
+    <!-- THIS CSS RESETS THE DEFAULTS CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- THIS CSS IS FOR THE FANCY BUTTONS -->
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <!-- THIS CSS IS FOR THE FANCY BUTTONS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <header>
+    <!-- PORTLIGHT LOGO & NAV -->
+    <section id="header-img">
+      <!-- THIS LOGO NEEDS TO LINK BACK TO THE DASHBOARD -->
+      <img src="assets/logo.png" />
+      <p>Portlight Automation System</p>
+    </section>
+    <nav>
+      <!-- THIS DROPDOWN ALLOWS THE USER TO NAVIGATE BETWEEN PROGRAMS, HOWEVER IT NEEDS TO BE CHANGED -->
+      <span class="custom-dropdown custom-dropdown__select--white">
+        <select class="custom-dropdown__select custom-dropdown__select--white">
+          <!-- LEADS TO ASIN PROGRAM -->
+          <option>ASIN</option>
+          <!-- LEADS TO VERIFICAITION PROGRAM -->
+          <option>Verification</option>
+        </select>
+      </span>
+
+      <span><em>portlight.ncarvalho@gmail.com</em></span>
+      <a href="#" name="log-out">Log Out</a>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container">
+      <h1>Verification Program</h1>
+      
+      <div id="ver-main">
+        <!-- 'NEW UPLOAD' BUTTON  -->
+        <button class="btn btn-1 btn-1a new-upload">+ New Upload</button>
+        <!-- BEGINNING OF ONE VERIFICATION ITEM -->
+        <div class="ver-item">
+          <!-- THIS DIV INCLUDES THE SUBJECT AND THE FILE NAME -->
+          <div class="ver-subject">
+            <h3>Subject</h3>
+            <p><small>Mother's_Maternity_Inventory_(Redo_New_Products_6-3_AI).csv</small></p>
+          </div>
+          <!-- THIS DIV INCLUDES THE RESUME & VERIFY BUTTONS -->
+          <div class="ver-buttons right">
+            <!-- RESUME BUTTON -->
+            <button class="resume btn btn-1 btn-1a">Resume</button>
+            <!-- VERIFY BUTTON -->
+            <button class="verify btn btn-1 btn-1a">Verify</button>
+          </div>
+          <!-- THIS DIV INCLUDES THE DOWNLOAD RESULTS BUTTON AND DELETE ITEM BUTTONS -->
+          <div class="ver-delete">
+            <!-- DOWNLOAD RESULTS BUTTON -->
+            <a href="#" class="results"><img src="assets/download.png" width="30" title="Download Results" alt="results"></a>
+            <!-- DELETE ITEM BUTTON -->
+            <a href="#" class="trash"><img src="assets/trash.png" width="30" title="Delete" alt="delete"></a>
+          </div>
+        </div>
+        <!-- END OF ONE VERIFICATION ITEM -->
+      </div>
+      
+      <!-- THIS ASIDE INCLUDES REQUIREMENT INFORMATION AND PROGRAM INSTRUCTIONS -->
+      <aside>
+        <h3>Don't Forget!</h3>
+        <h4>Please Meet the Following Requirements</h4>
+        <ol>
+          <li>Please make sure 'Search Term' column exists and not empty.</li>
+          <li>Please wait until the project assigned and then refresh the page</li>
+        </ol>
+        <h4>Program Instructions</h4>
+        <ol>
+          <li>Search with SKU number in each file, if not found mark as 'NU', else, go to step 2.</li>
+          <li>Get the ver from step 1 and search into Amazon, leave the result to be BLANK if not found, else, go to step 3.</li>
+          <li>Automatically mark 'D' with items contain "Discontinued by manufacturer". Creating the views for the rest items.</li>
+        </ol>
+      </aside>
+
+    </div>
+
+
+  
+  </body>
+
+  <footer class="clear">2014 Portlight, LLC</footer>
+
+</html>

@@ -9,8 +9,11 @@
   <head>
   	<meta charset = "utf-8"/> 
   	<title>ASIN 2</title>
+    <!-- THIS CSS RESETS THE DEFAULTS CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- THIS CSS IS FOR THE FANCY BUTTONS -->
     <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <!-- THIS CSS IS FOR THE FANCY BUTTONS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/modernizr.custom.js"></script>
   </head>
@@ -18,14 +21,18 @@
   <header>
     <!-- PORTLIGHT LOGO & NAV -->
     <section id="header-img">
+      <!-- THIS LOGO NEEDS TO LINK BACK TO THE DASHBOARD -->
       <img src="assets/logo.png" />
       <p>Portlight Automation System</p>
     </section>
 
     <nav>
+      <!-- THIS DROPDOWN ALLOWS THE USER TO NAVIGATE BETWEEN PROGRAMS, HOWEVER IT NEEDS TO BE CHANGED -->
       <span class="custom-dropdown custom-dropdown__select--white">
         <select class="custom-dropdown__select custom-dropdown__select--white">
+          <!-- LEADS TO ASIN PROGRAM -->
           <option>ASIN</option>
+          <!-- LEADS TO VERIFICAITION PROGRAM -->
           <option>Verification</option>
         </select>
       </span>
@@ -67,13 +74,13 @@
             <td class="center">Annee Matthew Tier Top, Pebble, X-Small</td>
             <td class="center">Annee Matthew Maternity And Nursing Sleeveless Tier Top - Mulberry - Medium</td>
           </tr>
-          <!-- IMAGE -->
-          <tr>
-            <td>Image</td>
-            <td><img src="http://i.imgur.com/oCNTd9i.png"></td>
-            <td><img src="http://ecx.images-amazon.com/images/I/41cQcqBT49L._AA160_.jpg"></td>
-            <td><img src="http://ecx.images-amazon.com/images/I/41I82aZl9BL._AA160_.jpg"></td>
-            <td><img src="http://ecx.images-amazon.com/images/I/41AR5VbIDCL._AA160_.jpg"></td>
+          <!-- MODEL, MPN, PART -->
+          <tr class="highlight">
+            <td>Model, MPN, Part</td>
+            <td>086-MB-L, 086-MB-L, 086-MB-L</td>
+            <td>086-PB-M, N/A, N/A</td>
+            <td>N/A, N/A, N/A</td>
+            <td>086-MB-M, N/A, N/A</td>
           </tr>
           <!-- DESCRIPTION -->
           <tr>
@@ -82,14 +89,6 @@
             <td><p class="description">Fashionable, sexy top with tiered panels that cleverly hides the postpartum tummy &amp; thighs.</p></td>
             <td><p></p></td>
             <td><p class="description">The Annee Matthew tiered top works beautifully for both maternity and breastfeeding. The stylish tiers become functional by allowing for discreet nursing and camouflage for the post baby tummy. Sleeveless design with smooth back is easy to layer for any season. Thin and airy fabric with s subtle color variation in the weave.95% cotton 5% spandexMachine wash tumble dry.</p></td>
-          </tr>
-          <!-- MODEL, MPN, PART -->
-          <tr class="highlight">
-            <td>Model, MPN, Part</td>
-            <td>086-MB-L, 086-MB-L, 086-MB-L</td>
-            <td>086-PB-M, N/A, N/A</td>
-            <td>N/A, N/A, N/A</td>
-            <td>086-MB-M, N/A, N/A</td>
           </tr>
           <!-- L X W X H (IN INCHES) -->
           <tr class="highlight">
@@ -131,64 +130,6 @@
             <td><a target="_blank"  href="http://www.amazon.com/Annee-Matthew-Tier-Pebble-X-Small/dp/B00KXNEY5Q%3FSubscriptionId%3DAKIAINODPPWYEKW22VJA%26tag%3Dproducverifi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00KXNEY5Q">View On Amazon</a></td>
             <td><a target="_blank"  href="http://www.amazon.com/Annee-Matthew-Maternity-Nursing-Sleeveless/dp/B00IF962PK%3FSubscriptionId%3DAKIAINODPPWYEKW22VJA%26tag%3Dproducverifi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00IF962PK">View On Amazon</a></td>
           </tr>
-          <!-- CHECK -->
-          <tr class="asin-check">
-            <td>Check</td>
-            <td>
-              <label>
-                <input type="radio" name="match" value="small" id="no-match" />
-                <img src="assets/x.png">
-              </label>
-            </td>
-            <td>
-              <label>
-                <input type="radio" name="match" value="small" />
-                <img src="assets/check.png">
-              </label>
-            </td>
-            <td>
-              <label>
-                <input type="radio" name="match" value="small" />
-                <img src="assets/check.png">
-              </label>
-            </td>
-            <td>
-              <label>
-                <input type="radio" name="match" value="small" />
-                <img src="assets/check.png">
-              </label>
-            </td>
-          </tr>
-        </table>
-
-        <table class="compare-item clear">
-          <tr>
-            <td colspan="5"><h3>Search Term: <a href="http://www.amazon.com/s/?field-keywords=Annee+Matthew+Tier+Maternity+%26+Nursing+Top">Annee Matthew Tier Maternity &amp; Nursing Top</a></h3></td>
-          </tr>
-          <!-- COLUMN NAMES -->
-          <tr>
-            <td></td>
-            <th>MANU</th>
-            <th>Item 1</th>
-            <th>Item 2</th>
-            <th>Item 3</th>
-          </tr>
-          <!-- SIMILARITY -->
-          <tr class="highlight">
-            <td>Similarity</td>
-            <td></td>
-            <td class="center"><p class="highest">25%</p></td>
-            <td class="center"><p>20%</p></td>
-            <td class="center"><p>19%</p></td>
-          </tr>
-          <!-- TITLE -->
-          <tr class="highlight">
-            <td>Title</td>
-            <td class="center">Annee Matthew Tier Maternity &amp; Nursing Top</td>
-            <td class="center">Annee Matthew Tier Top, Pebble, Medium</td>
-            <td class="center">Annee Matthew Tier Top, Pebble, X-Small</td>
-            <td class="center">Annee Matthew Maternity And Nursing Sleeveless Tier Top - Mulberry - Medium</td>
-          </tr>
           <!-- IMAGE -->
           <tr>
             <td>Image</td>
@@ -197,62 +138,6 @@
             <td><img src="http://ecx.images-amazon.com/images/I/41I82aZl9BL._AA160_.jpg"></td>
             <td><img src="http://ecx.images-amazon.com/images/I/41AR5VbIDCL._AA160_.jpg"></td>
           </tr>
-          <!-- DESCRIPTION -->
-          <tr>
-            <td>Description</td>
-            <td><p>Annee Matthew Tier Top, Mulberry, Large</p></td>
-            <td><p class="description">Fashionable, sexy top with tiered panels that cleverly hides the postpartum tummy &amp; thighs.</p></td>
-            <td><p></p></td>
-            <td><p class="description">The Annee Matthew tiered top works beautifully for both maternity and breastfeeding. The stylish tiers become functional by allowing for discreet nursing and camouflage for the post baby tummy. Sleeveless design with smooth back is easy to layer for any season. Thin and airy fabric with s subtle color variation in the weave.95% cotton 5% spandexMachine wash tumble dry.</p></td>
-          </tr>
-          <!-- MODEL, MPN, PART -->
-          <tr class="highlight">
-            <td>Model, MPN, Part</td>
-            <td>086-MB-L, 086-MB-L, 086-MB-L</td>
-            <td>086-PB-M, N/A, N/A</td>
-            <td>N/A, N/A, N/A</td>
-            <td>086-MB-M, N/A, N/A</td>
-          </tr>
-          <!-- L X W X H (IN INCHES) -->
-          <tr class="highlight">
-            <td>L x W x H (in inches)</td>
-            <td>N/A x N/A x N/A</td>
-            <td>N/A x N/A x N/A</td>
-            <td>N/A x N/A x N/A</td>
-            <td>N/A x N/A x N/A</td>
-          </tr>
-          <!-- WEIGHT -->
-          <tr class="highlight">
-            <td>Weight</td>
-            <td>0.4 lbs</td>
-            <td>0 lbs</td>
-            <td>0 lbs</td>
-            <td>0 lbs</td>
-          </tr>
-          <!-- COLOR -->
-          <tr class="highlight">
-            <td>Color</td>
-            <td></td>
-            <td>Pebble</td>
-            <td>Pebble</td>
-            <td>Mulberry</td>
-          </tr>
-          <!-- PRICE -->
-          <tr class="highlight">
-            <td>Price</td>
-            <td>$47.93</td>
-            <td>$45.00</td>
-            <td>$45.00</td>
-            <td>$50.00</td>
-          </tr>
-          <!-- URL -->
-          <tr>
-            <td>URL</td>
-            <td></td>
-            <td><a target="_blank" href="http://www.amazon.com/Annee-Matthew-Tier-Pebble-Medium/dp/B00IG8KYR2%3FSubscriptionId%3DAKIAINODPPWYEKW22VJA%26tag%3Dproducverifi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00IG8KYR2">View On Amazon</a></td>
-            <td><a target="_blank" href="http://www.amazon.com/Annee-Matthew-Tier-Pebble-X-Small/dp/B00KXNEY5Q%3FSubscriptionId%3DAKIAINODPPWYEKW22VJA%26tag%3Dproducverifi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00KXNEY5Q">View On Amazon</a></td>
-            <td><a target="_blank" href="http://www.amazon.com/Annee-Matthew-Maternity-Nursing-Sleeveless/dp/B00IF962PK%3FSubscriptionId%3DAKIAINODPPWYEKW22VJA%26tag%3Dproducverifi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00IF962PK">View On Amazon</a></td>
-          </tr>
           <!-- CHECK -->
           <tr class="asin-check">
             <td>Check</td>
@@ -282,9 +167,12 @@
             </td>
           </tr>
         </table>
-
+        
+        <!-- BACK BUTTON -->
         <button class="back btn btn-4 btn-4d icon-arrow-left">Back</button>
+        <!-- NEXT PAGE BUTTON -->
         <button class="next-page btn btn-4 btn-4c icon-arrow-right">Next Page</button>
+        <!-- SAVE AND EXIT PAGE -->
         <button class="save-exit btn btn-1 btn-1a">Save and Exit</button>
     </div>
   </body>

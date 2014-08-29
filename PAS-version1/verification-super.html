@@ -2,15 +2,18 @@
 
 <!-- 
 	Nicole Carvalho
-  Verification
+  Verification Super User
 -->
 
 <html lang = "en">  
   <head>
   	<meta charset = "utf-8"/> 
-  	<title>Verification</title>
+  	<title>Verification - Super User</title>
+    <!-- THIS CSS RESETS THE DEFAULTS CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- THIS CSS IS FOR THE FANCY BUTTONS -->
     <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <!-- THIS CSS IS FOR THE FANCY BUTTONS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/modernizr.custom.js"></script>
   </head>
@@ -18,10 +21,12 @@
   <header>
     <!-- PORTLIGHT LOGO & NAV -->
     <section id="header-img">
+      <!-- THIS LOGO NEEDS TO LINK BACK TO THE DASHBOARD -->
       <img src="assets/logo.png" />
       <p>Portlight Automation System</p>
     </section>
     <nav>
+      <!-- THIS DROPDOWN ALLOWS THE USER TO NAVIGATE BETWEEN PROGRAMS, HOWEVER IT NEEDS TO BE CHANGED -->
       <span class="custom-dropdown custom-dropdown__select--white">
         <select class="custom-dropdown__select custom-dropdown__select--white">
           <option>ASIN</option>
@@ -37,55 +42,35 @@
   <body>
     <div class="container">
       <h1>Verification Program</h1>
-      <div id="asin-main">
+      <div id="ver-main">
+        <!-- 'NEW UPLOAD' BUTTON  -->
         <button class="btn btn-1 btn-1a new-upload">+ New Upload</button>
-        <div class="asin-item">
-          <div class="asin-subject">
+        <!-- BEGINNING OF ONE VERIFICATION ITEM -->
+        <div class="ver-item">
+          <!-- THIS DIV INCLUDES THE SUBJECT AND THE FILE NAME -->
+          <div class="ver-subject">
             <h3>Subject</h3>
             <p><small>Mother's_Maternity_Inventory_(Redo_New_Products_6-3_AI).csv</small></p>
+            <p><small><strong>Uploaded by </strong>portlight.ncarvalho@gmail.com</small></p>
           </div>
-          <div class="asin-buttons right">
-            <button class="resume btn btn-1 btn-1a">Resume</button>
-            <button class="verify btn btn-1 btn-1a">Verify</button>
+          <!-- THIS DIV INCLUDES THE STATUS AND THE 'DELETE FROM AMAZON' BUTTONS -->
+          <div class="ver-buttons right">
+            <p><strong>Status:</strong> Inactive</p>
+            <button class="delete-from-amazon btn btn-1 btn-1a">Delete from Amazon</button>
           </div>
-          <div class="asin-delete">
+          <!-- THIS DIV INCLUDES THE DOWNLOAD RESULTS DELETE BUTTONS -->
+          <div class="ver-delete">
+            <!-- RESULTS BUTTON -->
             <a href="#" class="results"><img src="assets/download.png" width="30" title="Download Results" alt="results"></a>
+            <!-- DELETE BUTTON -->
             <a href="#" class="trash"><img src="assets/trash.png" width="30" title="Delete" alt="delete"></a>
           </div>
         </div>
-
-        <div class="asin-item">
-          <div class="asin-subject">
-            <h3>Subject</h3>
-            <p><small>Mother's_Maternity_Inventory_(Redo_New_Products_6-3_AI).csv</small></p>
-          </div>
-          <div class="asin-buttons right">
-            <button class="resume btn btn-1 btn-1a">Resume</button>
-            <button class="verify btn btn-1 btn-1a">Verify</button>
-          </div>
-          <div class="asin-delete">
-            <a href="#" class="results"><img src="assets/download.png" width="30" title="Download Results" alt="results"></a>
-            <a href="#" class="trash"><img src="assets/trash.png" width="30" title="Delete" alt="delete"></a>
-          </div>
-        </div>
-
-        <div class="asin-item">
-          <div class="asin-subject">
-            <h3>Subject</h3>
-            <p><small>Mother's_Maternity_Inventory_(Redo_New_Products_6-3_AI).csv</small></p>
-          </div>
-          <div class="asin-buttons right">
-            <button class="resume btn btn-1 btn-1a">Resume</button>
-            <button class="verify btn btn-1 btn-1a">Verify</button>
-          </div>
-          <div class="asin-delete">
-            <a href="#" class="results"><img src="assets/download.png" width="30" title="Download Results" alt="results"></a>
-            <a href="#" class="trash"><img src="assets/trash.png" width="30" title="Delete" alt="delete"></a>
-          </div>
-        </div>
+        <!-- END OF ONE VERIFICATION ITEM -->
 
       </div>
-
+      
+      <!-- THIS ASIDE INCLUDES REQUIREMENT INFORMATION AND PROGRAM INSTRUCTIONS -->
       <aside>
         <h3>Don't Forget!</h3>
         <h4>Please Meet the Following Requirements</h4>
@@ -96,7 +81,7 @@
         <h4>Program Instructions</h4>
         <ol>
           <li>Search with SKU number in each file, if not found mark as 'NU', else, go to step 2.</li>
-          <li>Get the ASIN from step 1 and search into Amazon, leave the result to be BLANK if not found, else, go to step 3.</li>
+          <li>Get the ver from step 1 and search into Amazon, leave the result to be BLANK if not found, else, go to step 3.</li>
           <li>Automatically mark 'D' with items contain "Discontinued by manufacturer". Creating the views for the rest items.</li>
         </ol>
       </aside>

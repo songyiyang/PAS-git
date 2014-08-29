@@ -9,15 +9,19 @@
   <head>
   	<meta charset = "utf-8"/> 
   	<title>Sign In</title>
+    <!-- THIS CSS RESETS THE DEFAULTS CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- THIS CSS IS FOR THE FANCY BUTTONS -->
     <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <!-- THIS IS THE MAIN CSS STYLESHEET -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/modernizr.custom.js"></script>
   </head>
 
   <header>
-    <!-- PORTLIGHT LOGO & NAV -->
+    <!-- PORTLIGHT LOGO & NAV  -->
     <section id="header-img">
+      <!-- THIS LOGO NEEDS TO LINK BACK TO THE DASHBOARD -->
       <img src="assets/logo.png" />
       <p>Portlight Automation System</p>
     </section>
@@ -27,16 +31,22 @@
     <div class="container">
       <section id="sign-in">
         <h1>Sign In</h1>
+        <!-- EMAIL INPUT FIELD -->
         <input type="text" name="sign-in-email" placeholder="email" autofocus>
+        <!-- PASSWORD INPUT FIELD -->
         <input type="password" name="sign-in-password" placeholder="password">
+        <!-- REMEMBER ME CHECKBOX -->
         <label for="remember-me"><input type="checkbox" name="remember-me" id="remember-me"> Remember Me</label>
+        <!-- SIGN IN BUTTON -->
         <p><button class="btn btn-3 btn-3e icon-arrow-right verification">Sign In</button></p>
+        <!-- FORGOT MY PASSWORD LINK -->
         <p><a href="forgot-password.html">Oops, I forgot my password!</a></p>
+        <!-- LINK TO SIGN UP PAGE -->
         <p><em>Don't have an account? <a href="sign-up.html">Sign Up</a></em></p>
       </section>
     </div>
 
-
+ <!-- THIS JS FILE CONTROLS THE FANCY BUTTONS -->
   <script src="js/classie.js"></script>
 
   </body>

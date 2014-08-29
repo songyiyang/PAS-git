@@ -128,34 +128,34 @@ h3{
 	margin: 0 auto;
 	padding: 0;
 }	
-#asin-main{
+#asin-main, #ver-main{
 	width: 700px;
 	overflow: auto;
 	float: left;
 }
-.asin-item{
+.asin-item, .ver-item{
 	width: 100%;
 	overflow: auto;
 	float: left;
 	min-height: 95px;
 }
-.asin-item:nth-child(even){
+.asin-item:nth-child(even), .ver-item:nth-child(even){
 	background-color: #EFF0F1;
 }
-.asin-subject{
+.asin-subject, .ver-subject{
 	width: 55%;
 	float: left;
 	padding: 5px;
 }
-.asin-subject p{
+.asin-subject p, .ver-subject p{
 	word-wrap: break-word;
 }
-.asin-buttons{
+.asin-buttons, .ver-buttons{
 	width: 35%;
 	float: left;
 	padding: 5px;
 }
-.asin-delete{
+.asin-delete, .ver-delete{
 	width: 5%;
 	float: right;
 	padding: 0 5px 5px 5px;

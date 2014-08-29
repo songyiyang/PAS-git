@@ -9,8 +9,11 @@
   <head>
   	<meta charset = "utf-8"/> 
   	<title>ASIN</title>
+    <!-- THIS CSS RESETS THE DEFAULTS CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- THIS CSS IS FOR THE FANCY BUTTONS -->
     <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <!-- THIS CSS IS FOR THE FANCY BUTTONS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/modernizr.custom.js"></script>
   </head>
@@ -18,10 +21,12 @@
   <header>
     <!-- PORTLIGHT LOGO & NAV -->
     <section id="header-img">
+      <!-- THIS LOGO NEEDS TO LINK BACK TO THE DASHBOARD -->
       <img src="assets/logo.png" />
       <p>Portlight Automation System</p>
     </section>
     <nav>
+      <!-- THIS DROPDOWN ALLOWS THE USER TO NAVIGATE BETWEEN PROGRAMS, HOWEVER IT NEEDS TO BE CHANGED -->
       <select>
         <option>ASIN</option>
         <option>Verification</option>
@@ -36,69 +41,39 @@
     <div class="container">
       <h1>ASIN Program</h1>
       <div id="asin-main">
-
+        <!-- BEGINNING OF ONE ASIN ITEM -->
         <div class="asin-item">
+          <!-- THIS DIV INCLUDES THE ITEM SUBJECT & FILE NAME -->
           <div class="asin-subject">
             <h3>Subject</h3>
             <p><small>Mother's_Maternity_Inventory_(Redo_New_Products_6-3_AI).csv</small></p>
           </div>
+          <!-- THIS DIV INCLUDES THE RESUME & CHECK BUTTONS, ALONG WITH THE 'HAS VARIATION' CHECKBOX -->
           <div class="asin-buttons right">
+            <!-- RESUME BUTTON -->
             <button class="resume btn btn-1 btn-1a">Resume</button>
-          <button class="check btn btn-1 btn-1a">Check</button>
+            <!-- DELETE BUTTON -->
+            <button class="check btn btn-1 btn-1a">Check</button>
             <p class="right">
+              <!-- 'HAS VARIATION' CHECKBOX -->
               <label for="has-variation-1">
                 <input type="checkbox" id="has-variation-1" name="variation" value="has-variation"> Has Variation
               </label>
             </p>
           </div>
+          <!-- THIS DIV INCLUDES THE DOWNLOAD RESULTS BUTTON & DELETE ITEM BUTTON -->
           <div class="asin-delete">
+            <!-- DOWNLOAD RESULTS -->
             <a href="#" class="results"><img src="assets/download.png" width="30" title="Download Results" alt="results"></a>
+            <!-- DELETE ITEM -->
             <a href="#" class="trash"><img src="assets/trash.png" width="30" title="Delete" alt="delete"></a>
           </div>
         </div>
-
-        <div class="asin-item">
-          <div class="asin-subject">
-            <h3>Subject</h3>
-            <p><small>Mother's_Maternity_Inventory_(Redo_New_Products_6-3_AI).csv</small></p>
-          </div>
-          <div class="asin-buttons right">
-            <button class="resume btn btn-1 btn-1a">Resume</button>
-          <button class="check btn btn-1 btn-1a">Check</button>
-            <p class="right">
-              <label for="has-variation-2">
-                <input type="checkbox" id="has-variation-2" name="variation" value="has-variation"> Has Variation
-              </label>
-            </p>
-          </div>
-          <div class="asin-delete">
-            <a href="#" class="results"><img src="assets/download.png" width="30" title="Download Results" alt="results"></a>
-            <a href="#" class="trash"><img src="assets/trash.png" width="30" title="Delete" alt="delete"></a>
-          </div>
-        </div>
-
-        <div class="asin-item">
-          <div class="asin-subject">
-            <h3>Subject</h3>
-            <p><small>Mother's_Maternity_Inventory_(Redo_New_Products_6-3_AI).csv</small></p>
-          </div>
-          <div class="asin-buttons right">
-            <button class="resume btn btn-1 btn-1a">Resume</button>
-          <button class="check btn btn-1 btn-1a">Check</button>
-            <p class="right">
-              <label for="has-variation-3">
-                <input type="checkbox" id="has-variation-3" name="variation" value="has-variation"> Has Variation
-              </label>
-            </p>
-          </div>
-          <div class="asin-delete">
-            <a href="#" class="results"><img src="assets/download.png" width="30" title="Download Results" alt="results"></a>
-            <a href="#" class="trash"><img src="assets/trash.png" width="30" title="Delete" alt="delete"></a>
-          </div>
-        </div>
+        <!-- END OF ONE ASIN ITEM -->
 
       </div>
 
+      <!-- THIS ASIDE INCLUDES REQUIREMENT INFORMATION -->
       <aside>
         <h3>Don't Forget!</h3>
         <h4>Please Meet the Following Requirements</h4>
@@ -110,8 +85,6 @@
 
     </div>
 
-
-  
   </body>
 
   <footer class="clear">2014 Portlight, LLC</footer>
