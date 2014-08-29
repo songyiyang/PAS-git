@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<!-- 
+	Nicole Carvalho
+  Verification 2
+-->
+
+<html lang = "en">  
+  <head>
+  	<meta charset = "utf-8"/> 
+  	<title>Verification 2</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <header>
+    <!-- PORTLIGHT LOGO & NAV -->
+    <section id="header-img">
+      <img src="assets/logo.png" />
+      <p>Portlight Automation System</p>
+    </section>
+
+    <nav>
+      <span class="custom-dropdown custom-dropdown__select--white">
+        <select class="custom-dropdown__select custom-dropdown__select--white">
+          <option>ASIN</option>
+          <option>Verification</option>
+        </select>
+      </span>
+      <span><em>portlight.ncarvalho@gmail.com</em></span>
+      <a href="#" name="log-out">Log Out</a>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container">
+      <h1>Verification Program</h1>
+      <h2>Inventory</h2>
+      <!-- EACH ITEM THAT IS BEING COMPARED -->
+        <table class="compare-item clear verification-compare">
+          <tr>
+            <td colspan="3">
+              <section class="item-details">
+                <h3>SKU : MANU SYNNEX 2203505 NA C4.66</h3>
+                <h4>SIMILARITY: 3.84%</h4>
+                <h5 class="clear">SUGGESTION: Manul || CASEPACK: N/A || 
+                <a target="_blank"  href="http://www.amazon.com/Kingston-microSDHC-Memory-SDC4-8GB/dp/B001CQT0X4%3FSubscriptionId%3DAKIAINODPPWYEKW22VJA%26tag%3Dproducverifi-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001CQT0X4">View on Amazon</a></h5>
+              </section>
+            </td>
+          <!-- COLUMN NAMES -->
+          <tr>
+            <td></td>
+            <th>MANU</th>
+            <th>AMAZON</th>
+          </tr>
+          <!-- MODEL -->
+          <tr class="highlight">
+            <td>Model</td>
+            <td>2203505</td>
+            <td>SDC4/8GB</td>
+          </tr>
+          <!-- MPN -->
+          <tr class="highlight">
+            <td>MPN</td>
+            <td>2203505</td>
+            <td>SDC4/8GB</td>
+          </tr>
+          <!-- PART -->
+          <tr class="highlight">
+            <td>Part</td>
+            <td>2203505</td>
+            <td>SDC4/8GB</td>
+          </tr>
+          <!-- UPC -->
+          <tr class="highlight">
+            <td>UPC</td>
+            <td>740617128147</td>
+            <td>740617160048</td>
+          </tr>
+          <!-- TITLE -->
+          <tr class="highlight">
+            <td>Title</td>
+            <td>8GB MICROSDHC (CLASS 4) HIGH CAPACITY MICRO SECURE DIGITAL CARD</td>
+            <td>Kingston 8 GB microSDHC Class 4 Flash Memory Card SDC4/8GB</td>
+          </tr>
+          <!-- COLOR -->
+          <tr class="highlight">
+            <td>Color</td>
+            <td>N/A</td>
+            <td>Black</td>
+          </tr>
+          <!-- L X W X H (IN INCHES) -->
+          <tr class="highlight">
+            <td>L x W x H (in inches)</td>
+            <td>3.8, 4.3, 0.5</td>
+            <td>0.1, 0.9, 1.2</td>
+          </tr>
+          <!-- PRICE -->
+          <tr class="highlight">
+            <td>Price</td>
+            <td>$21.65</td>
+            <td>$6.18</td>
+          </tr>
+          <!-- DESCRIPTION -->
+          <tr>
+            <td>Description</td>
+            <td><p>N/A</p></td>
+            <td><p class="description">Starting at 4GB, microSDHC cards offer higher storage for more music, more videos, more pictures, more games, more of everything you need in today's mobile world. The microSDHC card allows you to maximize today's revolutionary mobile devices. Kingston's microSDHC cards use the new speed class rating of Class 4 that guarantee a minimum data transfer rate of 4MB/ sec. for optimum performance with devices that use microSDHC. Identical in physical size to today's standard microSD card, the microSDHC cards are designed to comply with SD Specification Version 2.00 and are only recognized by microSDHC host devices. They can be used as full-size SDHC cards when used with the included adapter. To ensure compatibility, look for the microSDHC or SDHC logo on host devices (e.g., phones, PDAs and cameras). Wherever you find yourself in the mobile world, you can rely on Kingston's microSDHC cards. All cards are 100-percent tested and are backed by a lifetime warranty and 24/7 live technical support.</p></td>
+          </tr>
+          <!-- IMAGE -->
+          <tr>
+            <td>Image</td>
+            <td><img src="http://i.imgur.com/oCNTd9i.png"></td>
+            <td><img src="http://ecx.images-amazon.com/images/I/41UF7nC58XL._SY300_.jpg"></td>
+          </tr>
+          <!-- CHECK -->
+          <tr class="verification-check">
+            <td >Check</td>
+            <td colspan="2">
+              <label for="verified">
+                <input type="radio" value="verified" id="verified" name="verification-check" /> Verified
+              </label>
+              <label>
+                <input type="radio" value="unverified" id="unverified" name="verification-check" /> Unverified
+              </label>
+              <label>
+                <input type="radio" value="discontinued" id="discontinued" name="verification-check" /> Discontinued
+              </label>
+              <label>
+                <input type="radio" value="undecided" id="undecided" name="verification-check" /> Undecided
+              </label>
+            </td>
+          </tr>
+
+        </table>
+
+        
+        <button class="back btn btn-4 btn-4d icon-arrow-left">Back</button>
+        <button class="next-page btn btn-4 btn-4c icon-arrow-right">Next Page</button>
+        <button class="save-exit btn btn-1 btn-1a">Save and Exit</button>
+    </div>
+  </body>
+
+  <footer class="clear">2014 Portlight, LLC</footer>
+
+</html>

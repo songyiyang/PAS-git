@@ -1,0 +1,420 @@
+/***************
+
+COLORS
+#0B618B VEICE BLUE
+#FDDC10 CANDLELIGHT
+#FBB705 SELECTIVE YELLOW
+#981B29 OLD BRICK
+#0B2E3E ELEPHANT
+
+******************/
+
+
+
+
+html, body{
+	height: 99%;
+}
+body {
+	font-family: "Lato", sans-serif;
+}
+footer{
+	text-align: center;
+	color: #949292;
+}
+a{
+	text-decoration: none;
+	color: #0b2e3e;
+}
+a:hover{
+	color: #0b618b;
+}
+a:visited{
+	color: #981b29;
+}
+
+/*********************************/
+/********* HEADER ****************/
+
+header{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #0b2e3e;
+	padding: 5px 0;
+	height: 40px;
+	overflow: hidden;}
+header #header-img{
+	width: 360px;
+	float: left;
+	margin-top: 5px;
+}
+header #header-img img{
+	display: block;
+	width: 115px;
+	margin: 0 0 0 25px;
+	float: left;}
+header #header-img p{
+	color: #eee;
+	margin: 8px 0 0 10px;
+	float: left;
+}
+header nav{
+	width: 600px;
+	float: right;
+	color: white;
+	text-align: right;
+	margin: 5px 10px 0 0;
+}
+nav#dash-nav{
+	margin-top: 10px;
+}
+header a[name="log-out"], a[name="log-in"]{
+	text-decoration: none;
+	color: #efefef;
+	
+	padding: 1px 10px;
+	margin: 10px;
+}
+header a[name="log-out"]:hover, a[name="log-in"]:hover{
+	transition-duration: 0.2s;
+	color: #fbb705;
+}
+
+select{
+	outline: none;
+	margin-right: 40px;
+	color:#fbb705;
+	border: 0;
+	border-radius: 0;
+	height: 30px;
+	width: 150px;
+	line-height: 1.5;
+	text-indent: 0.01px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	font-size: 12pt;
+	padding: 0 5px;
+	background: transparent;
+	background: url("../assets/resized/25px-arrow-down.png") no-repeat right center;
+}
+select option{
+	margin: 5px 0;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-background: blue;
+    -moz-background: blue;
+    background: blue;
+}
+
+/*********************************/
+/********* DASH ***********/
+
+div.container > section > p {
+	text-align: center;
+}
+
+/*********************************/
+/********* ASIN PAGE 1 ***********/
+
+h3{
+	margin: 0;
+}
+.container{
+	width: 1024px;
+	margin: 0 auto;
+	padding: 0;
+}	
+#asin-main{
+	width: 700px;
+	overflow: auto;
+	float: left;
+}
+.asin-item{
+	width: 100%;
+	overflow: auto;
+	float: left;
+	min-height: 95px;
+}
+.asin-item:nth-child(even){
+	background-color: #EFF0F1;
+}
+.asin-subject{
+	width: 55%;
+	float: left;
+	padding: 5px;
+}
+.asin-subject p{
+	word-wrap: break-word;
+}
+.asin-buttons{
+	width: 35%;
+	float: left;
+	padding: 5px;
+}
+.asin-delete{
+	width: 5%;
+	float: right;
+	padding: 0 5px 5px 5px;
+}
+.trash img, .results img{
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+	padding: 5px;
+	border-radius: 25px;
+}
+.trash img:hover{
+	/*background-color: rgba(229,41,62,.3);*/
+	margin-left: -2px;
+	transition-duration: 0.2s;
+}
+.results img:hover{
+	/*background-color: rgba(253,220,16,.5);*/
+	margin-left: -2px;
+	transition-duration: 0.2s;
+}
+.check, .resume{
+	font-size: 8pt;
+	padding: 5px;
+	font-size: 12pt;
+	margin: 0;
+}
+.check{
+	width: 100px;
+}
+.resume{
+	width: 100px;
+	border-color: lightgrey;
+	color: lightgrey;
+}
+.resume:hover{
+	background-color: transparent;
+	color: lightgrey;
+}
+.right{
+	text-align: right;
+}
+.clear{
+	clear: both;
+}
+
+/*********************************/
+
+aside{
+	width: 280px;
+	float: right;
+}
+
+/*********************************/
+/********* ASIN PAGE 2 ***********/
+
+table.compare-item{
+	background-color: #fff;
+	width: 100%;
+	margin-bottom: 20px;
+	box-shadow: 3px 3px 10px #efefef;
+}
+table.compare-item td{
+	width: 20%;
+	vertical-align: text-top;
+	padding: 5px;
+}
+table.compare-item h3{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+table.compare-item tr:nth-child(7),
+table.compare-item tr:nth-child(8),
+table.compare-item tr:nth-child(9),
+table.compare-item tr:nth-child(10),
+table.compare-item tr:nth-child(11),
+table.compare-item tr:nth-child(12),
+table.compare-item tr:nth-child(13){
+	border-top: 1px solid grey;
+}
+table.compare-item td:nth-child(1){
+	width: 15%;
+}
+table.compare-item td:nth-child(2){
+	background-color: #F7EFBE;
+}
+table.compare-item .description{
+	max-height: 100px;
+	overflow: auto;
+}
+.center{
+	text-align: center;
+}
+p.highest{
+	background-color: #14B2FF;
+	width: 30%;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 5px;
+	color: #fff;
+}
+table.compare-item img{
+	display: block;
+	margin: 0 auto;
+}
+table.compare-item button{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.asin-check label > input{ /* HIDE RADIO */
+  display:none;
+  height: 50px;
+}
+.asin-check label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+  border-radius: 25px;
+  padding: 5px;
+}
+.asin-check label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  background: lightgreen;
+}
+.asin-check label > input[id="no-match"]:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  background: pink;
+}
+.asin-check label img{
+	width: 30px;
+}
+button.next-page, button.save-exit{
+	text-align: right;
+	float: right;
+	margin: 0 0 20px 0;
+}
+button.back{
+	margin: 0 0 20px 0;
+}
+button.next-page{
+	margin-left: 10px;
+}
+
+/*********************************/
+/***** VERIFICATION PAGE 1 *******/
+
+button.delete-from-amazon{
+	width: 100%;
+	margin: 15px 0 0 0;
+	padding: 5px 10px;
+	border-color: #7F1722;
+	color: #7F1722;
+	font-size: 8pt;
+}
+button.delete-from-amazon:hover{
+	background-color: #7F1722;
+}
+
+button.verify{
+	font-size: 8pt;
+	padding: 5px;
+	font-size: 12pt;
+	margin: 0;
+	width: 100px;
+}
+
+.new-upload{
+	float: right;
+	margin: 0 0 10px 0;
+}
+
+/*********************************/
+/***** VERIFICATION PAGE 2 *******/
+
+.item-details{
+	color: #fff;
+	background: #0B618B;
+	padding: 10px 10px 1px 10px;
+	margin: 0 0 10px 0;
+}
+
+.item-details h3, .item-details h4{
+	width: 50%;
+	float: left;
+	margin: 0;
+}
+
+.item-details h4{
+	text-align: right;
+	margin-top: 5px;
+	font-size: 14pt;
+}
+
+.item-details a{
+	color: #FDDC10;
+}
+.item-details a:visited{
+	color: #FBB705;
+}
+table td[colspan="3"]{
+	padding: 0;
+}
+.highlight:hover > td{
+	background-color: rgba(11,97,139,.2);
+}
+.highlight:hover > td:nth-child(2){
+	background-color: rgba(11,97,139,.2);
+}
+.verification-compare tr:last-of-type > td{
+	background: white;
+}
+.verification-check label{
+	width: 20%;
+	float: left;
+	margin: 10px 0;
+	text-align: center;
+	font-size: 14pt;
+	padding: 10px;
+}
+.verification-check label:hover{
+	background-color: #981B29;
+	color: #fff;
+}
+.verification-check label[for="verified"]:hover{
+	background-color: #0A8A5B;
+	color: #fff;
+}
+
+/*********************************/
+/********** SIGN IN***************/
+input[name="sign-in-email"],
+input[name="sign-in-password"],
+input[name="sign-up-email"],
+input[name="sign-up-password"]{
+	display: block;
+	margin: 0 auto;
+	width: 380px;
+	margin-top: 10px;
+	height: 20px;
+	padding: 10px;
+}
+#sign-in h1, #sign-up h1, #forgot-password h1, #forgot-password h2{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0;
+}
+label[for="remember-me"]{
+	width: 400px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 10px;
+}
+section#sign-in, section#sign-up, #forgot-password{
+	box-shadow: 0 0 10px #999;
+	width: 500px;
+	margin: 0 auto;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+
+
